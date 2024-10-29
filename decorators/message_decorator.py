@@ -2,11 +2,16 @@ from imessage import IMessage
 
 
 class MessageDecorator(IMessage):
+    """Базовый декоратор для класса IMessage, позволяющий расширять функциональность сообщений."""
+
     def __init__(self, message: IMessage):
+        """Инициализирует декоратор с сообщением, которое требуется обернуть."""
         self._message = message
 
     def print(self):
+        """Выводит сообщение, делегируя вывод оборачиваемому сообщению."""
         self._message.print()
 
     def get_content(self):
+        """Возвращает содержимое оборачиваемого сообщения."""
         return self._message.get_content()

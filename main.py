@@ -15,17 +15,37 @@ if __name__ == "__main__":
     message.print()
     print()
 
-    message = FooterDecorator(HeaderDecorator(Message("С днем рождения!"), "Дорогой мой друг!"), "Твой брат")
+    message = FooterDecorator(
+        HeaderDecorator(Message("С днем рождения!"), "Дорогой мой друг!"), "Твой брат"
+    )
     message.print()
     print()
 
-    message = DateDecorator(FooterDecorator(HeaderDecorator(Message("С днем рождения!"), "Дорогой мой друг!"), "Твой брат"), "04.04.2001")
+    message = DateDecorator(
+        FooterDecorator(
+            HeaderDecorator(Message("С днем рождения!"), "Дорогой мой друг!"),
+            "Твой брат",
+        ),
+        "04.04.2001",
+    )
     message.print()
     print()
 
-    message = DateDecorator(FooterDecorator(HeaderDecorator(Message("С днем рождения!"), "Дорогой мой друг!"), "Твой брат"))
+    message = DateDecorator(
+        FooterDecorator(
+            HeaderDecorator(Message("С днем рождения!"), "Дорогой мой друг!"),
+            "Твой брат",
+        )
+    )
     message.print()
     print()
 
-    message = Base64Decorator(DateDecorator(FooterDecorator(HeaderDecorator(Message("С днем рождения!"), "Дорогой мой друг!"), "Твой брат")))
+    message = Base64Decorator(
+        DateDecorator(
+            FooterDecorator(
+                HeaderDecorator(Message("С днем рождения!"), "Дорогой мой друг!"),
+                "Твой брат",
+            )
+        )
+    )
     message.print()
