@@ -2,7 +2,7 @@ from imessage import IMessage
 
 
 class Message(IMessage):
-    def __init__(self, content):
+    def __init__(self, content: str):
         self._content = content
 
     def print(self):
