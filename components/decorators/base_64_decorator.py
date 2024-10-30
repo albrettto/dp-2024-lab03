@@ -7,13 +7,15 @@ class Base64Decorator(MessageDecorator):
 
     def print(self):
         """Выводит закодированное в Base64 содержимое сообщения."""
-        encoded_content = base64.b64encode(self.get_content().encode("utf-8")).decode(
-            "utf-8"
-        )
-        print(encoded_content)
+        print(self.get_content())
 
-    def get_content(self):
-        """Возвращает содержимое сообщения, закодированное в Base64."""
+    def get_content(self) -> str:
+        """
+        Возвращает содержимое сообщения, закодированное в Base64.
+
+        Returns:
+            str: Содержимое сообщения, закодированное в Base64 формате.
+        """
         return base64.b64encode(self._message.get_content().encode("utf-8")).decode(
             "utf-8"
         )
