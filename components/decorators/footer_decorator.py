@@ -6,7 +6,13 @@ class FooterDecorator(MessageDecorator):
     """Декоратор для добавления подписи к сообщению."""
 
     def __init__(self, message: IMessage, footer: str):
-        """Инициализирует декоратор с сообщением и подписью."""
+        """
+        Инициализирует декоратор с сообщением и подписью.
+
+        Params:
+            message (IMessage): Объект сообщения, к которому будет добавлена подпись.
+            footer (str): Подпись, которую нужно добавить.
+        """
         super().__init__(message)
         self._footer = footer
 
@@ -15,6 +21,11 @@ class FooterDecorator(MessageDecorator):
         self._message.print()
         print(self._footer)
 
-    def get_content(self):
-        """Возвращает содержимое сообщения с добавленной подписью."""
+    def get_content(self) -> str:
+        """
+        Возвращает содержимое сообщения с добавленной подписью.
+
+        Returns:
+            str: Содержимое сообщения с добавленной подписью.
+        """
         return f"{self._message.get_content()}\n{self._footer}"
