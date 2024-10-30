@@ -2,11 +2,11 @@ import base64
 import unittest
 from datetime import datetime
 
-from decorators.base_64_decorator import Base64Decorator
-from decorators.date_decorator import DateDecorator
-from decorators.footer_decorator import FooterDecorator
-from decorators.header_decorator import HeaderDecorator
-from message import Message
+from components.decorators.base_64_decorator import Base64Decorator
+from components.decorators.date_decorator import DateDecorator
+from components.decorators.footer_decorator import FooterDecorator
+from components.decorators.header_decorator import HeaderDecorator
+from components.message import Message
 
 
 class TestMessageDecorators(unittest.TestCase):

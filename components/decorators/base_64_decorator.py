@@ -1,5 +1,5 @@
 import base64
-from decorators.message_decorator import MessageDecorator
+from components.decorators.message_decorator import MessageDecorator
 
 
 class Base64Decorator(MessageDecorator):

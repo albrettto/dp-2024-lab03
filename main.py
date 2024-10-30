@@ -1,8 +1,8 @@
-from message import Message
-from decorators.header_decorator import HeaderDecorator
-from decorators.footer_decorator import FooterDecorator
-from decorators.date_decorator import DateDecorator
-from decorators.base_64_decorator import Base64Decorator
+from components.message import Message
+from components.decorators.header_decorator import HeaderDecorator
+from components.decorators.footer_decorator import FooterDecorator
+from components.decorators.date_decorator import DateDecorator
+from components.decorators.base_64_decorator import Base64Decorator
 
 
 # Пример использования

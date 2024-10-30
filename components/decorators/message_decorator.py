@@ -1,4 +1,4 @@
-from imessage import IMessage
+from interfaces.imessage import IMessage
 
 
 class MessageDecorator(IMessage):

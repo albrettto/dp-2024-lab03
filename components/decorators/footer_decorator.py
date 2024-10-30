@@ -1,5 +1,5 @@
-from decorators.message_decorator import MessageDecorator
-from imessage import IMessage
+from components.decorators.message_decorator import MessageDecorator
+from interfaces.imessage import IMessage
 
 
 class FooterDecorator(MessageDecorator):
