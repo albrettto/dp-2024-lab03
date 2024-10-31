@@ -15,7 +15,7 @@ class MessageDecorator(IMessage):
 
     def print(self):
         """Выводит сообщение, делегируя вывод оборачиваемому сообщению."""
-        self._message.print()
+        print(self.get_content())
 
     def get_content(self) -> str:
         """

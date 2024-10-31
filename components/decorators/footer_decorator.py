@@ -18,8 +18,7 @@ class FooterDecorator(MessageDecorator):
 
     def print(self):
         """Выводит сообщение, а затем подпись."""
-        self._message.print()
-        print(self._footer)
+        print(self.get_content())
 
     def get_content(self) -> str:
         """

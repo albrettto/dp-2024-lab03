@@ -15,7 +15,7 @@ class Message(IMessage):
 
     def print(self):
         """Выводит содержимое сообщения в консоль."""
-        print(self._content)
+        print(self.get_content())
 
     def get_content(self) -> str:
         """

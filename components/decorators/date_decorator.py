@@ -19,8 +19,7 @@ class DateDecorator(MessageDecorator):
 
     def print(self):
         """Выводит сообщение, а затем дату."""
-        self._message.print()
-        print(self._date)
+        print(self.get_content())
 
     def get_content(self) -> str:
         """

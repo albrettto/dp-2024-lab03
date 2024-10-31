@@ -18,8 +18,7 @@ class HeaderDecorator(MessageDecorator):
 
     def print(self):
         """Выводит заголовок и затем сообщение."""
-        print(self._header)
-        self._message.print()
+        print(self.get_content())
 
     def get_content(self) -> str:
         """
